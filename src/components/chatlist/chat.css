@@ -1,0 +1,52 @@
+.cht {
+    margin: auto ;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.cht:hover{
+    background-color: #333333; 
+} 
+
+.cht img {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cht_info {
+    width: 80%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cht_info h2,p { 
+    margin: 0;
+
+}
+
+.cht_info p{
+    width: 80%;
+}
+
+.user{
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+}
+.user h2{
+    width: auto;
+    float: left;
+}
+.user p{
+    width: auto;
+    float: right;
+}

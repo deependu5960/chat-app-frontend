@@ -1,0 +1,30 @@
+.chat_home{
+    height: 98%;
+    width: 98%;
+    /* background-color: aqua; */
+    background-color: #262626;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    padding: 0;
+}
+.chat_logo{
+    margin: 0;
+    height: 60%;
+    width: auto;
+    border-radius: 50%;
+}
+button{
+    height: 10%;
+    width: 20%;
+    border: 0;
+    border-radius: 10px;
+    font-size: 50%;
+    background:linear-gradient(to right, rgb(0, 81, 255),rgba(1, 255, 251, 0.758))
+}
+button:hover{
+    background:linear-gradient(to left, rgb(0, 81, 255),rgba(1, 255, 251, 0.758))
+}

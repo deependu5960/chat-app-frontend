@@ -8,7 +8,7 @@ const Profile_card = ({ name, id, city, refreshFriends,refreshUsers }) => {
   const token = localStorage.getItem("token")
   const add_friend = async ()=>{
     const request = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/addfriend`,{
+        `${import.meta.env.VITE_BACKEND_URL}/addfriend`,{
         method: "POST",
         headers:{
           "Authorization": "Bearer "+ token,

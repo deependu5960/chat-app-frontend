@@ -34,7 +34,7 @@ const Signin_box = () => {
       setmsg("")
 
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/signup`, {
+        `${import.meta.env.VITE_BACKEND_URL}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

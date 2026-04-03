@@ -23,7 +23,7 @@ const Chatbox = (props) => {
         const get_user = async () => {
             
             const request = await fetch(
-                `${process.env.REACT_APP_BACKEND_URL}/chat_user?user_id=${id}`, {
+                `${import.meta.env.VITE_BACKEND_URL}/chat_user?user_id=${id}`, {
                 method: "GET"
             }
             );
@@ -40,7 +40,7 @@ const Chatbox = (props) => {
 
     const send_api = async () => {
         const request = await fetch(
-            `${process.env.REACT_APP_BACKEND_URL}/msg`, {
+            `${import.meta.env.VITE_BACKEND_URL}/msg`, {
             method: "POST",
             headers: {
                 "Authorization": "Bearer " + token,
@@ -60,7 +60,7 @@ const Chatbox = (props) => {
     const get_msg = async () => {
 
         const request = await fetch(
-            `${process.env.REACT_APP_BACKEND_URL}/getmsg?receiver_id=${id}`, {
+            `${import.meta.env.VITE_BACKEND_URL}/getmsg?receiver_id=${id}`, {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token,

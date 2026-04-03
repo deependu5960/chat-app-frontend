@@ -17,7 +17,7 @@ const Home = () => {
 
   const get_friends = async () => {
     const request = await fetch(
-      `${process.env.REACT_APP_BACKEND_URL}/friends`, {
+      `${import.meta.env.VITE_BACKEND_URL}/friends`, {
       method: "GET",
       headers: {
         "Authorization": "Bearer " + token

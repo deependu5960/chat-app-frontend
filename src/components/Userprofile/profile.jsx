@@ -10,7 +10,7 @@ const Profile = ({setid}) => {
 
     try {
       const request = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/user`, {
+        `${import.meta.env.VITE_BACKEND_URL}/user`, {
         method: "GET",
         headers: {
           "Authorization": "Bearer " + token

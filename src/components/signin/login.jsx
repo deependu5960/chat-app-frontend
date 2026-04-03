@@ -18,7 +18,7 @@ const Login_box = () => {
   const login_api = async (usr, pass) => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/login", {
+        `${import.meta.env.VITE_BACKEND_URL}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

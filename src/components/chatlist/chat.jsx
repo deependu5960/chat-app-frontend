@@ -17,7 +17,7 @@ const Chat = (props) => {
   const get_msg = async () => {
 
     const request = await fetch(
-      `${process.env.REACT_APP_BACKEND_URL}/getmsg?receiver_id=${id}`, {
+      `${import.meta.env.VITE_BACKEND_URL}/getmsg?receiver_id=${id}`, {
       method: "GET",
       headers: {
         "Authorization": "Bearer " + token,

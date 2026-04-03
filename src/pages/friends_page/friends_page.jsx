@@ -15,7 +15,7 @@ const Friends = () => {
   const users_api = async () => {
     try {
       const request = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/users`, {
+        `${import.meta.env.VITE_BACKEND_URL}/users`, {
         method: "GET",
         headers: {
           "Authorization": "Bearer " + token

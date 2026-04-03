@@ -27,5 +27,12 @@
   },
   "overrides": {
     "vite": "^8.0.0-beta.13"
-  }
+  },
+
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }

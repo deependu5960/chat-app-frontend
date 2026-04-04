@@ -17,6 +17,7 @@ const Login_box = () => {
 
   const login_api = async (usr, pass) => {
     try {
+      localStorage.clear()
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/login`, {
         method: "POST",
@@ -37,7 +38,7 @@ const Login_box = () => {
         return navigate("/")
       }
       else{
-        setmsg(data.msg)
+        setmsg(data.detail)
       }
 
     } catch (error) {

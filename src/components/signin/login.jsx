@@ -18,6 +18,7 @@ const Login_box = () => {
   const login_api = async (usr, pass) => {
     try {
       localStorage.clear()
+      setmsg("")
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/login`, {
         method: "POST",

@@ -27,10 +27,6 @@ const Home = () => {
     )
     const response = await request.json()
 
-    if (!response.ok){
-      return navigate("/")
-    }
-    
     // console.log(response)
     setfrd_list(response)
   }

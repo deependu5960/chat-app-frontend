@@ -10,6 +10,7 @@ import Chatbox from '../Chatbox_page/chatbox'
 
 const Home = () => {
   // localStorage.clear()
+  const navigate = useNavigate()
   const token = localStorage.getItem("token")
   const [frd_list, setfrd_list] = useState([])
   const [my_id , setid] = useState("")
@@ -25,6 +26,11 @@ const Home = () => {
     }
     )
     const response = await request.json()
+
+    if (!response.ok){
+      return navigate("/")
+    }
+    
     // console.log(response)
     setfrd_list(response)
   }
